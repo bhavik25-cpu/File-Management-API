@@ -111,7 +111,8 @@ file - File to be uploaded
 2. List All Files
 Endpoint: GET http://localhost:3000/api/files/list
 
-![Uploading image.png…]()
+![image](https://github.com/bhavik25-cpu/File-Management-API/assets/82199211/9438358b-8f32-4e72-bf95-16e17c6844c2)
+
 
 
 
@@ -120,9 +121,14 @@ Endpoint: DELETE http://localhost:3000/api/files/:filename
 Params:
 filename - Name of the file to be deleted
 
+![image](https://github.com/bhavik25-cpu/File-Management-API/assets/82199211/65e112b5-1bf8-4e72-b869-6cbf2a4f4904)
+
+
 
 4. Search for Files
 Endpoint: GET http://localhost:3000/api/files/search?findfile=file
 Params:
 findfile - Query string to search for files
-Testing with Postman
+
+![image](https://github.com/bhavik25-cpu/File-Management-API/assets/82199211/de6c5677-ff21-4d71-950d-1ea833895b29)
+
