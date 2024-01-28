@@ -78,7 +78,8 @@ Follow these instructions to set up and run the project on your local machine.
 
 1. Clone the repository:
 
-   git clone https://github.com/your-username/file-management-api.git
+   git clone https://github.com/bhavik25-cpu/File-Management-API.git
+
 
 
 2. Navigate to the project directory:
