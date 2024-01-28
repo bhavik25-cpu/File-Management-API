@@ -111,6 +111,9 @@ file - File to be uploaded
 2. List All Files
 Endpoint: GET http://localhost:3000/api/files/list
 
+![Uploading image.png…]()
+
+
 
 3. Delete a File
 Endpoint: DELETE http://localhost:3000/api/files/:filename
