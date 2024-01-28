@@ -104,6 +104,8 @@ API Endpoints
 Endpoint: POST http://localhost:3000/api/files/upload
 Form Data:
 file - File to be uploaded
+![image](https://github.com/bhavik25-cpu/File-Management-API/assets/82199211/506a08ef-1985-4649-9d5c-9c7dd7839d43)
+
 
 
 2. List All Files
