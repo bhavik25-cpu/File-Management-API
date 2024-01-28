@@ -1,0 +1,95 @@
+CREATE DATABASE codeera;
+
+show databases;
+
+Drop database codeera;
+
+Use codeera;
+
+
+
+CREATE TABLE employees(
+id int PRIMARY KEY,
+name VARCHAR(50) NOT NULL,
+salary int(20),
+department VARCHAR(50),
+dob date
+);
+
+
+Show Tables;
+
+
+CREATE TABLE emp AS SELECT * FROM employees; 
+
+
+desc emp;
+
+>copy all columns from another table
+CREATE TABLE emp1 AS 
+SELECT id, name FROM employees; 
+
+
+desc emp1;
+
+
+SELECT * from employee;
+
+>copy all columns from another table
+CREATE TABLE emp2 AS 
+SELECT * FROM employees
+WHERE id =102
+
+
+
+INSERT INTO employee(id,name,salary,department,dob)
+VALUES(101,'jack',2000,'HR','1997-05-19')
+
+
+
+
+CREATE TABLE employee(
+ID int PRIMARY KEY,
+NAME VARCHAR(50) NOT NULL,
+ADDRESS int(20),
+DEPT_ID VARCHAR(50),
+FOREIGN KEY (DEPT_ID) REFERENCES Orders(customer_id)
+);
+
+
+
+SELECT first_name,
+COUNT(*) AS Numbers 
+FROM
+Customers
+GROUP BY country
+
+
+  
+SELECT first_name,last_name,SUM(age)
+FROM
+Customers
+GROUP BY first_name
+ORDER BY SUM(age)
+
+
+  
+SELECT first_name,last_name, SUM(age)
+FROM
+Customers
+WHERE first_name!='John' AND first_name IS NOT NULL 
+GROUP BY first_name
+
+
+SELECT *
+FROM table1
+JOIN table2 ON table1.column_name = table2.column_name
+JOIN table3 ON table2.column_name = table3.column_name;
+
+
+SELECT item, amount, COUNT(*) ToTal
+FROM Orders
+GROUP BY item
+HAVING ToTal > 2
+ORDER BY ToTal
+
